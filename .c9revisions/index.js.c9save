@@ -1,0 +1,3 @@
+{"ts":1374589493834,"silentsave":true,"restoring":false,"patch":[[]],"length":0}
+{"contributors":[],"silentsave":false,"ts":1374589527816,"patch":[[{"diffs":[[1,"exports.App = require(\"./lib/App\");\nexports.static = require(\"./lib/static\")"]],"start1":0,"start2":0,"length1":0,"length2":76}]],"length":76,"saved":false}
+{"ts":1374589529709,"patch":[[{"diffs":[[0,"static\")"],[1,";"]],"start1":68,"start2":68,"length1":8,"length2":9}]],"length":77,"saved":false}

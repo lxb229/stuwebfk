@@ -1,0 +1,2 @@
+{"ts":1374634721849,"silentsave":true,"restoring":false,"patch":[[]],"length":0}
+{"contributors":[],"silentsave":false,"ts":1374634730984,"patch":[[{"diffs":[[1,"function m1(){\n    setTimeout(function(){\n        console.log(\"m1\");\n    })     \n}\n\nfunction m2(){\n    console.log(2);\n}\nm1();\nm2();"]],"start1":0,"start2":0,"length1":0,"length2":132}]],"length":132,"saved":false}

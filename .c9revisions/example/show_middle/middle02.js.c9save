@@ -1,0 +1,5 @@
+{"ts":1374636923052,"silentsave":true,"restoring":false,"patch":[[]],"length":0}
+{"contributors":[],"silentsave":false,"ts":1374636933494,"patch":[[{"diffs":[[1,"module.exports = function(req,res,next){\n    res.write(\"my name is middle02\");\n    next();\n}"]],"start1":0,"start2":0,"length1":0,"length2":92}]],"length":92,"saved":false}
+{"ts":1374636936678,"patch":[[{"diffs":[[0,"middle02"],[1,"\\n"],[0,"\");\n    "]],"start1":67,"start2":67,"length1":16,"length2":18}]],"length":94,"saved":false}
+{"ts":1374637074260,"patch":[[{"diffs":[[0,"    "],[-1,"res.writ"],[1,"consol"],[0,"e(\"m"]],"start1":41,"start2":41,"length1":16,"length2":14}]],"length":92,"saved":false}
+{"ts":1374637077665,"patch":[[{"diffs":[[0," console"],[1,".log"],[0,"(\"my nam"]],"start1":44,"start2":44,"length1":16,"length2":20}]],"length":96,"saved":false}
