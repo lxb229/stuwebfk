@@ -1,0 +1,24 @@
+{
+  "name": "stuwebfk",
+  "version": "0.0.2",
+  "description": "student web framework",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/brighthas/stuwebfk.git"
+  },
+  "author": "brighthas",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/brighthas/stuwebfk/issues"
+  },
+  "keywords": [
+    "stu"
+  ]
+}
