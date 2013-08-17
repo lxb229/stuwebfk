@@ -1,5 +1,0 @@
-{"ts":1374718712735,"silentsave":true,"restoring":false,"patch":[[]],"length":0}
-{"contributors":[],"silentsave":false,"ts":1374719804462,"patch":[[{"diffs":[[1,"<!doctype html>\n<html>\n    <head>\n        <title>test get/post method</title>\n    </head>\n    <body>\n        <h4>test get method</h4>\n        <a href=\"\"\n    </body>\n</html>"]],"start1":0,"start2":0,"length1":0,"length2":172}]],"length":172,"saved":false}
-{"ts":1374719951876,"patch":[[{"diffs":[[0,"a href=\""],[-1,"\""],[1,"/gettest\"></a>\n        <h4>test post method.</h4>\n        <form action=\"/posttest\" method=\"post\">\n            \n        </form>"],[0,"\n    </b"]],"start1":143,"start2":143,"length1":17,"length2":142}]],"length":297,"saved":false}
-{"ts":1374719964985,"patch":[[{"diffs":[[0,"        "],[1,"<input type=\"submit\" value=\"test post\"/>"],[0,"\n       "]],"start1":253,"start2":253,"length1":16,"length2":56}]],"length":337,"saved":false}
-{"ts":1374721240336,"patch":[[{"diffs":[[0,"ettest\">"],[1,"test get"],[0,"</a>\n   "]],"start1":153,"start2":153,"length1":16,"length2":24}]],"length":345,"saved":false}

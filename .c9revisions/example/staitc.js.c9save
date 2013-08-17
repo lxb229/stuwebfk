@@ -1,5 +1,0 @@
-{"ts":1374589576092,"silentsave":true,"restoring":false,"patch":[[]],"length":0}
-{"contributors":[],"silentsave":false,"ts":1374589587872,"patch":[[{"diffs":[[1,"var webfk = require(\"..\");\n"]],"start1":0,"start2":0,"length1":0,"length2":27}]],"length":27,"saved":false}
-{"ts":1374589640858,"patch":[[{"diffs":[[0,"(\"..\");\n"],[1,"var app = webfk.App();\napp.use(webfk.static(__dirname+\"/public\"));\napp"]],"start1":19,"start2":19,"length1":8,"length2":78}]],"length":97,"saved":false}
-{"ts":1374589657448,"patch":[[{"diffs":[[0,"blic\"));\napp"],[1,".listen(process.env.PORT);"]],"start1":85,"start2":85,"length1":12,"length2":38}]],"length":123,"saved":false}
-{"ts":1374589698682,"patch":[[{"diffs":[[0,"ar app ="],[1," new"],[0," webfk.A"]],"start1":28,"start2":28,"length1":16,"length2":20}]],"length":127,"saved":false}
