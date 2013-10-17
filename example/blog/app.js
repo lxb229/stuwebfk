@@ -47,7 +47,7 @@ var fk = require("../..")
                 ,articles:arts});
    })
    
-   app.get("/login",function(req,res){
+   app.get("/login/",function(req,res){
        res.view("login.html",{isLogined:isLogined(req)});
    })
    
