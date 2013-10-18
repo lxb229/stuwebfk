@@ -2,14 +2,11 @@ var types = []
    ,articles = require("./articles")
    ,fs = require("fs");
 
-// 读取数据文件加载到types
 try{
     var data = fs.readFileSync("types.db");
     types = JSON.parse(data.toString()).types;
 }catch(e){}   
    
-// 扩展 types 对象，具有CURD功能。
-// 创建
 types.create = function(title){
    var type = {
       id:"ID-"+Date.now(),
@@ -18,7 +15,6 @@ types.create = function(title){
    types.unshift(type);
 }
 
-// 删除
 types.del = function(id){
    var index = this.getIndex(id);
    if(index !== null && !articles.has(id)){
@@ -26,7 +22,6 @@ types.del = function(id){
    }
 }
 
-// 通过ID得到type所在索引
 types.getIndex = function(id){
    var self = this,
        index = null;
@@ -49,7 +44,6 @@ types.get = function(id){
     }
 }
 
-// 修改type title
 types.update = function(title,id){
   var index = this.getIndex(id);
   if(index !== null && typeof title === "string"){
@@ -58,7 +52,6 @@ types.update = function(title,id){
   }
 }
 
-// 每10秒保存一次
 function save(){
     fs.writeFile('types.db',JSON.stringify({types:types}))
 }

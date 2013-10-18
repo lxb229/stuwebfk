@@ -2,14 +2,10 @@ var fk = require("../..")
    ,App = fk.App
    ,download = fk.download
    ,app = new App
-   // article DB
    ,articles = require("./articles")
-   // type DB
    ,types = require("./types")
-   ,admin = {loginname:"admin",password:"admin"}  // 登录帐号密码
+   ,admin = {loginname:"admin",password:"admin"}  
 
-   
-   // 加载框架插件
    app.use(fk.static(__dirname+"/static"));
    app.use(fk.post);
    app.use(fk.query);
@@ -18,8 +14,7 @@ var fk = require("../..")
    app.use(fk.redirect);
    app.use(fk.session);
    app.use(fk.view(__dirname+"/view")); 
-      
-   // 判断是否已登录
+
    function isLogined(req){
        return req.session.logined;
    }
@@ -51,7 +46,6 @@ var fk = require("../..")
        res.view("login.html",{isLogined:isLogined(req)});
    })
    
-   // 登录
    app.post("/login",function(req,res){
        if(req.body.loginname === admin.loginname 
        && req.body.password === admin.password){
@@ -62,13 +56,11 @@ var fk = require("../..")
        }
    })
    
-   // 退出
    app.get("/logout",function(req,res){
         req.session.logined = false;
         res.redirect("/");
    })
     
-   // 打开创建文章的页面
    app.get("/create",function(req,res){
        if(isLogined(req)){
            res.view("create.html",{types:types})
@@ -77,7 +69,6 @@ var fk = require("../..")
        }
    })
    
-   // 显示文章内容
    app.get("/article/:id",function(req,res){
        var art = articles.get(req.params.id);
        if(art){
@@ -87,13 +78,11 @@ var fk = require("../..")
        }       
    })
    
-   // 下载图片
    app.get("/img/:articleId",function(req,res){
        var art = articles.get(req.params.articleId);
        res.download("img",new Buffer(art.img,"base64"));
    })
    
-   // 创建文章
    app.post("/create",function(req,res){
        if(isLogined(req)){
            req.body.img = req.files.img;
@@ -102,9 +91,6 @@ var fk = require("../..")
        res.redirect("/");
    })
    
-   
-   
-   // 删除文章
    app.get("/del/:id",function(req,res){
       if(isLogined(req)){
          articles.del(req.params.id);
@@ -112,7 +98,6 @@ var fk = require("../..")
       res.redirect("/");
    })
    
-   // 打开更改页面
    app.get("/edit/:id",function(req,res){
        var art = articles.get(req.params.id);
        if(art && isLogined(req)){
@@ -123,7 +108,6 @@ var fk = require("../..")
        
    })
    
-   // 更改文章
    app.post("/update/:id",function(req,res){
       if(isLogined(req)){
          req.body.img = req.files.img;
@@ -132,7 +116,6 @@ var fk = require("../..")
       res.redirect("/");
    })
    
-   // 创建类别
    app.post("/type/create",function(req,res){
       if(isLogined(req)){
          types.create(req.body.title);
@@ -140,7 +123,6 @@ var fk = require("../..")
       res.redirect("/type/manage");
    })
    
-   // 删除类别
    app.post("/type/del/:id",function(req,res){
       if(isLogined(req)){
          types.del(req.params.id);
@@ -148,7 +130,6 @@ var fk = require("../..")
       res.redirect("/type/manage");  
    })
    
-   // 更改类别名称
    app.post("/type/update/:id",function(req,res){
       if(isLogined(req)){
          types.update(req.body.title,req.params.id);
