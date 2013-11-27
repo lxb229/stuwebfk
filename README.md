@@ -11,7 +11,7 @@
 
 + 第2步：精通最流行的Express和mongoose Node.js框架，从而能快速开发应用。
 
-+ 第3步：用详细的实例，精通Node.js 核心API。
++ 第3步：视频的形式和实例形式，让读者精通Node.js 核心API。
 
 + 读者还将得到一个支持：
 https://github.com/brighthas/stuwebfk/issues
