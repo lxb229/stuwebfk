@@ -13,7 +13,7 @@ var fk = require("../..")
    app.use(fk.download);
    app.use(fk.redirect);
    app.use(fk.session);
-   app.use(fk.view(__dirname+"/view")); 
+   app.use(fk.view(__dirname+"/view"));
 
    function isLogined(req){
        return req.session.logined;
