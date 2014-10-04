@@ -3,7 +3,7 @@
 
 > 它不只是一本书
 
-> 阅读地址 http://jsera.net/book/gyTCIRi5zx
+> 阅读地址 http://forjs.org/book/gyTCIRi5zx
 
 #### 本书注重实战。通过3个步骤和1个支持，让你具备高级node.js程序员的实力。
 
